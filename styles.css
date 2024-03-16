@@ -1,0 +1,31 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.topic {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.topic h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.machine-learning {
+    color: #1f7a8c; /* Deep blue-green */
+}
+.nlp {
+    color: #db3a34; /* Vivid red */
+}
+.computer-vision {
+    color: #247ba0; /* Calm blue */
+}

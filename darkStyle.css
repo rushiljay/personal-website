@@ -1,0 +1,255 @@
+body
+{
+    font-family: Trebuchet MS, sans-serif;
+    background-color: black;
+}
+
+.portfolio-name
+{
+    font-size: 100px;
+    padding: 0px;
+    margin-bottom: 25px;
+    margin-top: 0px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.name
+{
+    font-size: 100px;
+    margin-bottom: 25px;
+    margin-top: 0px;
+    padding: 0px;
+    border: 5px solid white;
+}
+
+ul
+{
+    display: flex;
+    justify-content: center;
+}
+
+button
+{
+    margin: 50px auto;
+    font-weight: bold;
+    font-size: xx-large;
+    background-color: black;
+    border: 2px solid white;
+    padding: 10px;
+    color: white;
+}
+
+.personal-info-box
+{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin: 200px;
+    margin-top: 0px;
+    color: white;
+    text-align: center;
+}
+
+.personal-info
+{
+    justify-self: center;
+    align-items: center;
+    margin: 20px;
+}
+.personal-image {
+    border: 5px solid white;
+    max-width: 200%;
+    max-height: 200%;
+}
+
+
+a
+{
+    text-decoration: none;
+    color: black;
+    color: white;
+}
+
+.logo
+{
+    background-color: white;
+    color: black;
+}
+
+.footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 200px;
+    margin-left: 100px;
+}
+
+.footer-logo 
+{
+    max-height: 50px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.project-box
+{
+    display: flex;
+    justify-content: center;
+    border: 5px solid white;
+    flex-direction: row-reverse;
+    padding: 50px;
+    margin: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.project-title-link
+{
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;;
+}
+
+.project-contents
+{
+    margin-right: 25px;
+    margin-left: 50px;
+}
+
+img
+{
+    max-height: 250px;
+    filter: grayscale(100%);
+}
+
+.qualifications-name
+{
+    font-size: 100px;
+    padding: 20px;
+    margin-bottom: 25px;
+    margin-top: 0px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.qualifications-content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subheading
+{
+    padding: 10px;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    width: fit-content;
+}
+
+.qualifications-description
+{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: white;
+    text-align: center;
+    width: 1000px;
+}
+
+.service-essay
+{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    line-height: 2;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.service-title
+{
+    font-size: 100px;
+    padding: 20px;
+    margin-bottom: 25px;
+    margin-top: 0px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.description
+{
+    font-size: 30px;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+}
+
+.description-content
+{
+    border: 5px solid white;
+    padding: 25px;
+}
+
+.project-description
+{
+    font-size: 25px;
+    color:white;
+}
+
+h2
+{
+    font-size: 50px; 
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.link 
+{
+    font-size: 25px; 
+    margin-top: 25px;
+}
+
+.external-link
+{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: x-large;
+    margin: 50px;
+}
+
+.service-links
+{
+    display: flex; 
+    justify-content: center; 
+    font-weight: bold; 
+    font-size: 50px;
+    margin: 25px;
+}
