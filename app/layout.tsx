@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import { ResizablePanelGroup } from "@/components/ui/resizable";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -30,7 +31,9 @@ export default function RootLayout({
           >
         <Sidebar />
         <main className="grid w-full h-full">
+          <ScrollArea>
             {children}
+            </ScrollArea>
         </main>
         </ThemeProvider>
       </body>

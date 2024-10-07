@@ -42,7 +42,7 @@ export default function Sidebar() {
 
   return (
     <div
-    className={`flex flex-col min-h-screen h-full py-5 px-2.5 transition border-r justify-between backdrop-blur-sm ${
+    className={`flex flex-col min-h-screen h-full py-5 px-2.5 transition border-r justify-between backdrop-blur-3xl ${
       isMobile
       ? isOpen
       ? 'fixed inset-0 z-10 w-full max-w-full'

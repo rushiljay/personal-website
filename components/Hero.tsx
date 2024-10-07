@@ -21,7 +21,7 @@ export function Hero() {
   }, [])
 
   return (
-    <div className="flex flex-col py-10">
+    <div className="flex flex-col mt-10 mb-0">
       <h1 className="sr-only">Rushil Jayant's Personal Website</h1>
       <p className="text-4xl md:text-6xl font-bold text-primary mb-2">Hello! I&apos;m</p>
       <p
@@ -30,7 +30,8 @@ export function Hero() {
         style={{
           lineHeight: '1.2',
           ['--bg-size' as any]: '300%',
-        }}
+        }
+      }
       >
         Rushil Jayant
       </p>
