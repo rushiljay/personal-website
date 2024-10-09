@@ -24,7 +24,7 @@ export default function Component() {
   }
 
   return (
-    <div className="min-h-fit bg-gradient-to-br from-background to-muted rounded-xl p-10">
+    <div className="min-h-fit bg-gradient-to-br from-background to-muted rounded-xl p-10 mb-10">
     <h2 className="text-4xl font-bold mb-6">Education</h2>
     <div className="w-full max-w-4xl mx-auto bg-[#f0f0f0] rounded-t-lg overflow-hidden shadow-xl">
       <div className="bg-[#1e1e1e] dark:bg-[#ffffff] rounded-lg shadow-xl">

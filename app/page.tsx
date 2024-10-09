@@ -2,6 +2,7 @@ import { AboutMe } from "@/components/AboutMe";
 import EducationView from "@/components/EducationView";
 import { Hero } from "@/components/Hero";
 import { ModeToggle } from "@/components/ModeToggle";
+import Projects from "@/components/Projects";
 import Resume from "@/components/Resume";
 import { Skill } from "@/components/Skill";
 import { SkillsCloud } from "@/components/SkillsCloud";
@@ -27,11 +28,14 @@ export default function Home() {
           <div>
             <AboutMe />
           </div>
-          <div>
+          <div id="experiences">
             <Resume/>
           </div>
-          <div className="mt-10">
+          <div className="mt-10" id="education">
             <EducationView/>
+          </div>
+          <div  id="projects">
+            <Projects/>
           </div>
         </div>
       </div>
