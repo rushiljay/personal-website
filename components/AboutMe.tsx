@@ -61,6 +61,8 @@ export function AboutMe() {
   }, [text]);
 
   return (
+    <div className="min-h-fit bg-gradient-to-br from-background to-muted rounded-xl p-10 mb-10">
+    <h2 className="text-4xl font-bold mb-6">About Me</h2>
     <div className="max-w-full rounded-3xl p-6">
       <div className="bg-[#1e1e1e] dark:bg-[#ffffff] rounded-lg shadow-xl">
         <div className="bg-[#3a3a3a] dark:bg-[#e0e0e0] px-4 py-2 flex items-center">
@@ -103,6 +105,7 @@ export function AboutMe() {
           }
         }
       `}</style>
+    </div>
     </div>
   );
 }

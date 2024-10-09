@@ -37,7 +37,6 @@ export default function Sidebar() {
     { title: "Experience", icon: Briefcase },
     { title: "Projects", icon: FolderOpenDot },
     { title: "Education", icon: GraduationCap },
-    { title: "Skills", icon: Award },
   ]
 
   return (

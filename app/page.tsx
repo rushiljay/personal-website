@@ -1,6 +1,9 @@
 import { AboutMe } from "@/components/AboutMe";
+import EducationView from "@/components/EducationView";
 import { Hero } from "@/components/Hero";
 import { ModeToggle } from "@/components/ModeToggle";
+import Resume from "@/components/Resume";
+import { Skill } from "@/components/Skill";
 import { SkillsCloud } from "@/components/SkillsCloud";
 
 export default function Home() {
@@ -23,6 +26,12 @@ export default function Home() {
           </div>
           <div>
             <AboutMe />
+          </div>
+          <div>
+            <Resume/>
+          </div>
+          <div className="mt-10">
+            <EducationView/>
           </div>
         </div>
       </div>
