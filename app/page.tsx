@@ -16,9 +16,11 @@ export default function Home() {
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 flex justify-center px-4 sm:px-6 lg:px-8">
+      <div className="flex-1 flex justify-center px-4 sm:px-6 lg:px-8" id="home">
         <div className="max-w-4xl w-full">
+          <div>
           <Hero />
+          </div>
           <div>
             {/* Responsive container for SkillsCloud */}
             <div className="mx-auto w-full max-w-lg">

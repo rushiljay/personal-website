@@ -69,7 +69,9 @@ export default function Sidebar() {
     >
       <div>
         <div className="border-b-2 pb-10">
-          <PersonCard showDetails={isOpen} />
+            <a href="#home">
+            <PersonCard showDetails={isOpen} />
+            </a>
           <div className="flex-none">
             <SidebarButton
               title="Close"
