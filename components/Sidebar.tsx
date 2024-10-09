@@ -40,7 +40,7 @@ export default function Sidebar() {
   const buttonBaseClass = 'text-lg font-semibold p-2 space-x-2'
 
   // Reusable SidebarButton component
-  const SidebarButton = ({ title, icon: Icon, href, onClick, tooltip }) => (
+  const SidebarButton = ({ title, icon: Icon, href, onClick, tooltip }: { title: string, icon: React.ComponentType<{ className?: string }>, href?: string, onClick?: React.MouseEventHandler, tooltip?: string }) => (
     <Button
       title={tooltip}
       className={`${buttonBaseClass} ${
@@ -76,7 +76,6 @@ export default function Sidebar() {
               icon={isOpen ? PanelLeftClose : PanelLeftOpen}
               onClick={toggleSidebar}
               tooltip={isOpen ? "Collapse" : "Expand"}
-              isOpen={isOpen}
             />
           </div>
         </div>
@@ -89,7 +88,6 @@ export default function Sidebar() {
                   title={button.title}
                   icon={button.icon}
                   tooltip={button.title}
-                  isOpen={isOpen}
                 />
               </a>
             ))}

@@ -32,7 +32,7 @@ const PositionEntry = ({ position }: { position: Position }) => (
     <div className="mt-2 text-sm" dangerouslySetInnerHTML={{ __html: position.description }} />
     <div className="mt-3 flex flex-wrap gap-2">
       {position.skills.map((skill, index) => (
-        <Skill key={index} icon={skill.icon} name={skill.name} color={skill.color} />
+        <Skill key={index} icon={skill.icon} name={skill.name} />
       ))}
     </div>
   </div>
