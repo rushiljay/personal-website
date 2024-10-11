@@ -30,8 +30,8 @@ export default function Education({
                 />
                 <div className="flex-1 space-y-2 text-center md:text-left">
                     <h3 className="text-lg font-semibold text-black">{university}</h3>
-                    <p className="text-sm text-muted-foreground text-gray-800">{degree}</p>
-                    <p className="text-sm text-muted-foreground text-gray-500">{duration}</p>
+                    <p className="text-sm font-semibold text-muted-foreground text-gray-800">{degree}</p>
+                    <p className="text-sm font-light text-muted-foreground text-gray-500">{duration}</p>
                 </div>
             </div>
             <div className="pt-2">
@@ -41,9 +41,9 @@ export default function Education({
                     ))}
                 </div>
             </div>
-            <p className="text-sm pt-2 text-gray-800">
-                Lorem Impsum Dolor
-            </p>
+            <div className="text-sm font-medium pt-2 text-gray-800 mt-2 mb-10">
+                <div dangerouslySetInnerHTML={{ __html: description }} />
+            </div>
         </div>
     )
 }

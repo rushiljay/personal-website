@@ -3,20 +3,72 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import Education from './EducationComponent'
+import { fetchSimpleIcons } from 'react-icon-cloud'
 
 interface Tab {
   id: number
   title: string
-  color: string
   content: React.ReactNode
 }
 
-export default function Component() {
-  const [tabs, setTabs] = useState<Tab[]>([
-    { id: 1, title: 'Texas A&M University', content:<Education university={'Texas A&M University'} degree={'Bachelors of Science in Computer Science and Minor in Statistics'} duration={'December 2024'} description={''} skills={[{icon: '<svg fill="#3776AB" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Python</title><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>', name: 'Python'}]} icon={'https://upload.wikimedia.org/wikipedia/commons/e/ee/Texas_A%26M_University_logo.svg'}/>, color:'bg-[#500000]'},
-    { id: 2, title: 'Foothill College', content: 'This is the React documentation tab.', color: 'bg-orange-500' },
-    { id: 3, title: 'Homestead High School', content: 'This is the GitHub tab.', color: 'bg-green-500'},
-  ])
+
+
+export default function EducationView() {
+const tamuSkills = [
+    { icon: 'https://cdn.simpleicons.org/python', name: 'Python'},
+    { icon: 'https://cdn.simpleicons.org/cplusplus', name: 'C++'},
+    { icon: 'https://cdn.simpleicons.org/r', name: 'R'},
+    { icon: 'https://cdn.simpleicons.org/pytorch', name: 'PyTorch'},
+    { icon: 'https://cdn.simpleicons.org/pandas', name: 'Pandas'},
+    { icon: 'https://cdn.simpleicons.org/scipy', name: 'SciPy'},
+    { icon: 'https://cdn.simpleicons.org/overleaf', name: 'Overleaf'},
+    { icon: 'https://cdn.simpleicons.org/c', name: 'C'},
+    { icon: 'https://cdn.simpleicons.org/numpy', name: 'Numpy'},
+    { icon: 'https://cdn.simpleicons.org/postgresql', name: 'PostgreSQL'},
+    { icon: 'https://cdn.simpleicons.org/selenium', name: 'Selenium'},
+    { icon: 'https://cdn.simpleicons.org/vuedotjs', name: 'Vue.js'},
+    { icon: 'https://cdn.simpleicons.org/django', name: 'Django'},
+    { icon: 'https://cdn.simpleicons.org/springboot', name: 'SpringBoot'},
+    { icon: 'https://cdn.simpleicons.org/vercel', name: 'Vercel'},
+    { icon: 'https://cdn.simpleicons.org/pytest', name: 'PyTest'},
+]
+
+const foothillSkills = [
+    { icon: 'https://cdn.simpleicons.org/mysql', name: 'MySQL'},
+    { icon: 'https://cdn.simpleicons.org/numpy', name: 'Numpy'},
+    { icon: 'https://cdn.simpleicons.org/python', name: 'Python'},
+    { icon: 'https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg', name: 'Excel'},
+    { icon: 'https://cdn.simpleicons.org/pandas', name: 'Pandas'},
+    { icon: 'https://cdn.simpleicons.org/linux', name: 'Linux'},
+    { icon: 'https://cdn.simpleicons.org/gnubash', name: 'Bash'},
+
+]
+
+const hhsSkills = [
+    { icon: 'https://www.vectorlogo.zone/logos/java/java-icon.svg', name: 'Java'},
+    { icon: 'https://cdn.simpleicons.org/github', name: 'Github'},
+    { icon: 'https://cdn.simpleicons.org/eclipseide', name: 'Eclipse'},
+
+]
+
+const TAMU_educationSkills = "<ul> \
+    <li><strong>📜 Scholarships:</strong> National Merit Scholar, President’s Endowed Scholar, Class of 1925 Scholar, National Merit Recognition Award</li> \
+    <li><strong>🏅 Honors:</strong> Craig and Galen Brown Engineering Honors Program</li> \
+    <li><strong>👥 Organizations:</strong> Aggie Coding Club, Aggie Data Science Club, Texas A&M Computing Society, TAMU Hack</li> \
+    <li><strong>📚 Relevant Coursework:</strong> Machine Learning, Artificial Intelligence, Computer and Network Security, Parallel Computing, Statistical Computing</li> \
+  </ul>";
+
+const Foothill_educationSkills = "  <p>📘 Studied analytics, databases, programming, statistics, data structures, and algorithms at Foothill College through the Dual Enrollment program while in high school. 💻📊</p>";
+
+const HHS_educationSkills = "   <h2>🎓Achievements</h2>\
+  <p>👥 President of Investments Club, President of Data Science Club, Academic Center Tutor, COVID-19 Taskforce Member</p>\
+  <p>🏅 Graduated with California State Seal of Biliteracy and Golden State Merit Diploma</p>";
+
+const [tabs, setTabs] = useState<Tab[]>([
+    { id: 1, title: 'Texas A&M University', content:<Education university={'Texas A&M University'} degree={'Bachelors of Science in Computer Science and Minor in Statistics'} duration={'December 2024'} skills={tamuSkills} icon={'https://upload.wikimedia.org/wikipedia/commons/e/ee/Texas_A%26M_University_logo.svg'} description={TAMU_educationSkills}/>},
+    { id: 2, title: 'Foothill College', content:<Education university={'Foothill College'} degree={'Certificate of Achievement: Advanced Software Engineering and Software Development in Python'} duration={'June 2022'} skills={foothillSkills} icon={'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Foothill_College_logo.svg/2560px-Foothill_College_logo.svg.png'} description={Foothill_educationSkills}/>},
+    { id: 3, title: 'Homestead High School', content:<Education university={'Homestead High School'} degree={'High School Diploma'} duration={'June 2022'} skills={hhsSkills} icon={'https://s3-us-west-2.amazonaws.com/sportshub2-uploads-prod/files/sites/922/2017/07/07163913/5410.png'} description={HHS_educationSkills}/>},
+])
   const [activeTab, setActiveTab] = useState<number>(1)
 
   const handleTabClick = (id: number) => {
@@ -54,7 +106,7 @@ export default function Component() {
               <span className="truncate text-gray-800">{tab.title}</span>
               {activeTab === tab.id && (
                 <motion.div
-                  className={`absolute bottom-0 left-0 right-0 h-0.5 ${tab.color}`}
+                  className={`absolute bottom-0 left-0 right-0 h-0.5`}
                   layoutId="activeTab"
                 />
               )}
@@ -63,7 +115,7 @@ export default function Component() {
         </div>
         
       </div>
-      <div className="bg-white p-4 h-64 overflow-auto">
+      <div className="bg-white p-4 h-fit overflow-auto">
         {tabs.find(tab => tab.id === activeTab)?.content}
       </div>
     </div>

@@ -2,7 +2,7 @@
 
 /**
  * Note: Use position fixed according to your needs
- * Navbar is better positioned at the bottom for desktop and bottom right for mobile.
+ * Navbar is better positioned at the bottom
  **/
 
 import { cn } from "@/lib/utils";
@@ -30,7 +30,7 @@ export const FloatingDock = ({
             onMouseMove={(e) => mouseX.set(e.pageX)}
             onMouseLeave={() => mouseX.set(Infinity)}
             className={cn(
-                "fixed bottom-0 md:bottom-4 right-0 md:right-auto mx-auto flex h-16 gap-4 items-end rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
+                "fixed bottom-4 mx-auto flex h-16 gap-4 items-end rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
                 className
             )}
         >
