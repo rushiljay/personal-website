@@ -17,10 +17,25 @@ const experiences = [
   <li key={2} className="mb-4"><strong>Retrieval-Augmented Generation (RAG)</strong> application 🤖🔄 to streamline <strong>ESG Reporting</strong> 🌱📊</li>\
 </ul>',
                 skills: [
-                    // { icon: PanelTop, name: "Web", color: "#61DAFB" },
-                    // { icon: Database, name: "SQL", color: "#336791" },
-                    // { icon: Cloud, name: "AWS", color: "#FF9900" }
-                    {icon: '<svg fill="#3776AB" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Python</title><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>', name: 'Python'}
+                    {icon: 'https://cdn.simpleicons.org/jenkins', name: 'Jenkins'},
+                    {icon: 'https://cdn.simpleicons.org/kubernetes', name: 'Kubernetes'},
+                    {icon: 'https://cdn.simpleicons.org/git', name: 'Git'},
+                    {icon: 'https://cdn.simpleicons.org/python', name: 'Python'},
+                    {icon: 'https://cdn.simpleicons.org/postman', name: 'Postman'},
+                    {icon: 'https://cdn.simpleicons.org/apachegroovy', name: 'Groovy'},
+                    {icon: 'https://cdn.simpleicons.org/docker', name: 'Docker'},
+                    {icon: 'https://cdn.simpleicons.org/redhatopenshift', name: 'OpenShift'},
+                    {icon: 'https://cdn.simpleicons.org/googlecloud', name: 'Google Cloud'},
+                    {icon: 'https://cdn.simpleicons.org/bitbucket', name: 'BitBucket'},
+                    {icon: 'https://cdn.simpleicons.org/jira', name: 'Jira'},
+                    {icon: 'https://cdn.simpleicons.org/sonarqube', name: 'SonarQube'},
+                    {icon: 'https://cdn.simpleicons.org/confluence', name: 'Confluence'},
+                    {icon: 'https://cdn.simpleicons.org/pytest', name: 'PyTest'},
+                    {icon: 'https://cdn.simpleicons.org/helm', name: 'Helm'},
+                    {icon: 'https://cdn.simpleicons.org/flask', name: 'Flask'},   
+                    {icon: 'https://cdn.simpleicons.org/googlegemini', name: 'Google Gemini'},
+                    {icon: 'https://cdn.simpleicons.org/googlecloudstorage', name: 'Google Cloud Storage'},
+                    {icon: 'https://cdn.simpleicons.org/github', name: 'Github'},
                 ]
             }
         ]
@@ -36,8 +51,11 @@ const experiences = [
                 endDate: "April 2024",
                 description: "<strong>Real-time</strong> AI financial news application 📈",
                 skills: [
-                    // { icon: PanelTop, name: "React Native", color: "#61DAFB" },
-                    // { icon: "<svg viewBox='0 0 24 24'><path fill='currentColor' d='M12 18.08c-6.63 0-12-2.72-12-6.08s5.37-6.08 12-6.08S24 8.64 24 12s-5.37 6.08-12 6.08zm-9.58-6.08c0 3.36 4.3 6.08 9.58 6.08s9.58-2.72 9.58-6.08-4.3-6.08-9.58-6.08-9.58 2.72-9.58 6.08z'/><path fill='currentColor' d='M12 20.07c-3.95 0-7.16-3.21-7.16-7.16S8.05 5.75 12 5.75s7.16 3.21 7.16 7.16-3.21 7.16-7.16 7.16zm-5.16-7.16c0 2.85 2.31 5.16 5.16 5.16s5.16-2.31 5.16-5.16S14.85 7.75 12 7.75s-5.16 2.31-5.16 5.16z'/><circle fill='currentColor' cx='12' cy='12.91' r='2.5'/></svg>", name: "Jest", color: "#C21325" }
+                    {icon: 'https://swimburger.net/media/ppnn3pcl/azure.png', name: 'Azure'},
+                    {icon: 'https://cdn.simpleicons.org/python', name: 'Python'},
+                    {icon: 'https://cdn.simpleicons.org/openai', name: 'OpenAI'},
+                    {icon: 'https://cdn.simpleicons.org/docker', name: 'Docker'},
+                    {icon: 'https://cdn.simpleicons.org/langchain', name: 'Langchain'},
                 ]
             },
             {
@@ -46,8 +64,16 @@ const experiences = [
                 endDate: "September 2023",
                 description: "Optimizing Financial Data <strong>ETL Pipelines</strong> 💼🚀 & AWS <strong>Infrastructure as Code</strong> (IaC) 🌩️🔧",
                 skills: [
-                    // { icon: PanelTop, name: "React Native", color: "#61DAFB" },
-                    // { icon: "<svg viewBox='0 0 24 24'><path fill='currentColor' d='M12 18.08c-6.63 0-12-2.72-12-6.08s5.37-6.08 12-6.08S24 8.64 24 12s-5.37 6.08-12 6.08zm-9.58-6.08c0 3.36 4.3 6.08 9.58 6.08s9.58-2.72 9.58-6.08-4.3-6.08-9.58-6.08-9.58 2.72-9.58 6.08z'/><path fill='currentColor' d='M12 20.07c-3.95 0-7.16-3.21-7.16-7.16S8.05 5.75 12 5.75s7.16 3.21 7.16 7.16-3.21 7.16-7.16 7.16zm-5.16-7.16c0 2.85 2.31 5.16 5.16 5.16s5.16-2.31 5.16-5.16S14.85 7.75 12 7.75s-5.16 2.31-5.16 5.16z'/><circle fill='currentColor' cx='12' cy='12.91' r='2.5'/></svg>", name: "Jest", color: "#C21325" }
+                    {icon: 'https://cdn.simpleicons.org/amazonwebservices', name: 'AWS'},
+                    {icon: 'https://www.npmjs.com/npm-avatar/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVUkwiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci9hY2M3M2RiNTFjNmE3NzIxYTIzNDAzNTQ0OWQ4MzgwOT9zaXplPTQ5NiZkZWZhdWx0PXJldHJvIn0.xgNJFrB8Tz89BFgDaybQOp1e54UfUv7VeqayL_Piddg', name: 'AWS Cloud Development Kit'},
+                    {icon: 'https://cdn.simpleicons.org/python', name: 'Python'},
+                    {icon: 'https://cdn.simpleicons.org/typescript', name: 'Typescript'},
+                    {icon: 'https://cdn.simpleicons.org/amazons3', name: 'Amazon S3'},
+                    {icon: 'https://cdn.simpleicons.org/awslambda', name: 'AWS Lambda'},
+                    {icon: 'https://d3g9o9u8re44ak.cloudfront.net/logo/40c0988b-b7ec-4c51-9732-5fd3c7d52928/96ad06d5-cf24-4ffe-94fb-5d3085d7d3eb.png', name: 'AWS Glue'},
+                    {icon: 'https://static-00.iconduck.com/assets.00/analytics-amazonathena-icon-2048x2028-16si4o29.png', name: 'Amazon Athena'},
+                    {icon: 'https://cdn.simpleicons.org/amazoniam', name: 'Amazon Identity Access Management'},
+                    {icon: 'https://cdn.simpleicons.org/confluence', name: 'Confluence'},
                 ]
             },
             {
@@ -56,11 +82,58 @@ const experiences = [
                 endDate: "December 2022",
                 description: "<strong>Full-Stack</strong> web app development for US Bank Data 📊",
                 skills: [
-                    // { icon: PanelTop, name: "React Native", color: "#61DAFB" },
-                    // { icon: "<svg viewBox='0 0 24 24'><path fill='currentColor' d='M12 18.08c-6.63 0-12-2.72-12-6.08s5.37-6.08 12-6.08S24 8.64 24 12s-5.37 6.08-12 6.08zm-9.58-6.08c0 3.36 4.3 6.08 9.58 6.08s9.58-2.72 9.58-6.08-4.3-6.08-9.58-6.08-9.58 2.72-9.58 6.08z'/><path fill='currentColor' d='M12 20.07c-3.95 0-7.16-3.21-7.16-7.16S8.05 5.75 12 5.75s7.16 3.21 7.16 7.16-3.21 7.16-7.16 7.16zm-5.16-7.16c0 2.85 2.31 5.16 5.16 5.16s5.16-2.31 5.16-5.16S14.85 7.75 12 7.75s-5.16 2.31-5.16 5.16z'/><circle fill='currentColor' cx='12' cy='12.91' r='2.5'/></svg>", name: "Jest", color: "#C21325" }
+                    {icon: 'https://cdn.simpleicons.org/blazor', name: 'Blazor'},
+                    {icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsu9DT1XLVF5b0A-LgCJr0RdXhHJL6CXuhbw&s', name: 'Syncfusion'},
+                    {icon: 'https://cdn.simpleicons.org/dotnet', name: '.NET'},
+                    {icon: 'https://cdn.simpleicons.org/postman', name: 'Postman'},
+                    {icon: 'https://cdn.simpleicons.org/jira', name: 'Jira'},
+                    {icon: 'https://cdn.simpleicons.org/codacy', name: 'Codacy'},
+
                 ]
             },
         ]
+        
+    },
+    {
+        name: "Mathnasium",
+        logo: "./MathnasiumA+.webp",
+        location: "Remote",
+        positions: [
+            {
+                title: "Math Instructor",
+                startDate: "April 2021",
+                endDate: "April 2023",
+                description: "🌟 Encouraged mastery in thousands of math concepts (K-12) by leveraging Socratic questioning. 🤔📐",
+                skills: [
+                    // {icon: 'https://cdn.simpleicons.org/python', name: 'Python'},
+                    // {icon: 'https://cdn.simpleicons.org/cplusplus', name: 'C++'},
+                    // {icon: 'https://cdn.simpleicons.org/c', name: 'C'},
+                    // {icon: 'https://cdn.simpleicons.org/gcc', name: 'GCC'},
+                    // {icon: 'https://cdn.simpleicons.org/clang', name: 'Clang'},
+                ]
+            }
+        ]
+    },
+    {
+        name: "City of Cupertino",
+        logo: "./Seal_of_Cupertino,_California.svg.png",
+        location: "Cupertino, CA",
+        positions: [
+            {
+                title: "Chair - Cupertino Teen Commission",
+                startDate: "August 2020",
+                endDate: "August 2021",
+                description: "👥 Chaired a teen group representing 15k youth, managing a $10k budget, organizing events like hackathons and political discussions, and advising City Council on youth issues, even transitioning events online. 💼💻🎉",
+                skills: []
+            },
+            {
+                title: "Vice Chair - Cupertino Teen Commission",
+                startDate: "August 2029",
+                endDate: "August 2020",
+                description: "🎓 Represented thousands of teens in Cupertino events, facilitated mental health, civic engagement, and environmental initiatives, and advised the school district on reopening measures. 🌱🧠🏫",
+                skills: []
+            }
+        ]  
     }
 ]
 

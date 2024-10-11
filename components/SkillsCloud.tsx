@@ -55,6 +55,15 @@ const slugs = [
   "gnubash",
   "linux",
   "mysql",
+  "gemini",
+  "openai",
+  "helm",
+  "googlecloudstorage",
+  "apachegroovy",
+  "postman",
+  "blazor",
+  "syncfusion",
+  "azure"
 ];
 
 
