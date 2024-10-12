@@ -18,34 +18,65 @@ type Project = {
   image?: string
 }
 
+// TODO: Add live link
+
 const projects: Project[] = [
   {
     id: 1,
-    name: 'Project 1',
-    shortDescription: 'A brief overview of Project 1.',
-    longDescription: 'Project 1 was an ambitious undertaking that involved creating a full-stack web application. It utilized React for the frontend, Node.js with Express for the backend, and MongoDB for the database. The project aimed to solve real-world problems by providing users with a platform to manage their daily tasks efficiently.',
-    skills: [{icon: '', name: 'Python'}],
-    liveLink: 'https://project1.com',
-    githubLink: 'https://github.com/username/project1',
-    image: '/placeholder.svg?height=200&width=300'
+    name: 'Texas A&M Course Recommender',
+    shortDescription: 'Helps students find courses that match their interests and preferences',
+    longDescription: 'Designed and developed a course recommendation service for over 10,000 courses at Texas A&M by\
+collaborating with a team of researchers to implement Chroma DB vector database, Llama 3.1 LLM, and Retrieval Augmented Generation\
+(RAG) pipelines using LangGraph, significantly enhancing the course selection process by providing personalized recommendations',    
+    // liveLink: 'https://project1.com',
+    githubLink: 'https://github.com/rushiljay/Aggie-Course-Recommender',
+    image: '/CourseRecommender.png',
+    skills: [
+      {icon: 'https://cdn.simpleicons.org/sqlite', name: 'Sqlite'},
+      {icon: 'https://cdn.simpleicons.org/langchain', name: 'LangChain'},
+      {icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdtQY9Ofk71m8DVL5yV3d_sDPuqzCexABNLA&s', name: 'Groq'},
+      {icon: 'https://cdn.simpleicons.org/python', name: 'Python'},
+      {icon: 'https://cdn.simpleicons.org/ollama', name: 'Ollama'},
+      {icon: 'https://cdn.simpleicons.org/meta', name: 'Llama 3.1'},]
   },
   {
     id: 2,
-    name: 'Project 2',
-    shortDescription: 'A quick summary of Project 2.',
-    longDescription: 'Project 2 focused on developing a mobile application using React Native. The app was designed to help users track their fitness goals and provide personalized workout plans. It integrated with various fitness APIs and used Firebase for real-time data synchronization and user authentication.',
-    skills: [{icon: '', name: 'Python'}],
-    githubLink: 'https://github.com/username/project2'
+    name: 'Grocery List Item Categorization App',
+    image: '/GroceryList.png',
+    shortDescription: 'Streamline the grocery shopping experience through item categorization using NLP',
+    longDescription: ' Developed a grocery list application to streamline the shopping experience by efficiently categorizing\
+items, integrating the RoBERTa-Base transformer model with Spacy for precise categorization, and creating a user-friendly interface using\
+HTML/CSS and React.js, while powering backend processes with FastAPI, resulting in a more organized and time-saving experience for users',
+    skills: [
+      {icon: 'https://cdn.simpleicons.org/fastapi', name: 'FastAPI'},
+      {icon: 'https://cdn.simpleicons.org/spacy', name: 'Spacy'},
+      {icon: 'https://cdn.simpleicons.org/html5', name: 'HTML'},
+      {icon: 'https://cdn.simpleicons.org/css3', name: 'CSS'},
+      {icon: 'https://cdn.simpleicons.org/react', name: 'React'},
+      {icon: 'https://cdn.simpleicons.org/python', name: 'Python'},
+      {icon: 'https://cdn.simpleicons.org/jupyter', name: 'Jupyter'},],
+    githubLink: 'https://github.com/rushiljay/Grocery-List-AI-App'
   },
   {
     id: 3,
-    name: 'Project 3',
-    shortDescription: 'An overview of Project 3.',
-    longDescription: 'Project 3 was a machine learning project that utilized Python and TensorFlow to create a predictive model for stock market trends. The project involved data collection, preprocessing, model training, and deployment. A web interface was also created using Flask to allow users to interact with the model and visualize predictions.',
-    skills: [{icon: '', name: 'Python'}],
-    liveLink: 'https://project3.com',
-    githubLink: 'https://github.com/username/project3',
-    image: '/placeholder.svg?height=200&width=300'
+    name: 'GrowFolio',
+    shortDescription: 'Comprehensive stock research app leveraging real-time data analysis, predictive analytics, AI-driven insights',
+    longDescription: "Developed an AI-powered chatbot to assist with investment decision-making by interpreting \
+financial data. Utilized Streamlit and Groq's Llama3 70b model, along with Retrieval Augmented Generation within LangChain, to fetch and \
+analyze data from Yahoo Finance and Wikipedia. The assistant enhanced users' understanding of the stock market, improving decision-making \
+accuracy and engagement. Image above is a conceptual representation of the GrowFolio app",
+    skills: [
+      {icon: 'https://cdn.simpleicons.org/streamlit', name: 'Streamlit'},
+      {icon: 'https://cdn.simpleicons.org/fastapi', name: 'FastAPI'},
+      {icon: 'https://cdn.simpleicons.org/meta', name: 'Llama 3.1'},
+      {icon: 'https://cdn.simpleicons.org/python', name: 'Python'},
+      {icon: 'https://cdn.simpleicons.org/langchain', name: 'LangChain'},
+      {icon: 'https://cdn.simpleicons.org/ollama', name: 'Ollama'},
+      {icon: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdtQY9Ofk71m8DVL5yV3d_sDPuqzCexABNLA&s', name: 'Groq'},
+    ],
+    // liveLink: 'https://project3.com',
+    githubLink: 'https://github.com/rushiljay/GrowFolio',
+    image: '/GrowFolio.png'
   }
 ]
 
@@ -120,7 +151,7 @@ function ProjectModal({ project, onClose }: { project: Project | null, onClose: 
                 alt={project.name}
                 width={600}
                 height={300}
-                className="rounded-md object-cover w-full"
+                className="rounded-md object-cover w-full h-[300px] max-h-[300px]"
               />
             </div>
           )}
