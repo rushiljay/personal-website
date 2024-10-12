@@ -13,7 +13,7 @@ const PersonCard = ({ showDetails = true }) => {
             {showDetails && (
             <div className="flex flex-col p-2 transition-all">
                 <h1 className="text-xl font-bold">Rushil Jayant</h1>
-                <div className="text-xs ">Personal Website</div>
+                {/* <div className="text-xs ">Personal Website</div> */}
             </div>
             )}
         </div>

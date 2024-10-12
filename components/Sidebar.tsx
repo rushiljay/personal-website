@@ -65,7 +65,7 @@ export default function Sidebar() {
             ? 'fixed inset-0 z-10 w-full max-w-full'
             : 'w-16'
           : isOpen
-            ? 'min-w-[350px] max-w-[350px]'
+            ? 'min-w-[250px] max-w-[250px]'
             : 'w-16'
       }`}
     >
