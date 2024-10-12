@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 "use client"
 
 import { useEffect, useRef } from "react"
@@ -27,8 +29,9 @@ export function Hero() {
         className="text-6xl md:text-8xl font-extrabold animate-gradient bg-gradient-to-r from-orange-400 via-purple-500 to-orange-400 bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent"
         style={{
           lineHeight: '1.2',
-          '--bg-size': '300%',        }
-      } as string
+          '--bg-size': '300%',
+        } as any
+      }
       >
         Rushil Jayant
       </p>
