@@ -40,7 +40,7 @@ export default function Sidebar() {
   const buttonBaseClass = 'text-lg font-semibold p-2 space-x-2'
 
   // Reusable SidebarButton component
-  const SidebarButton = ({ title, icon: Icon, href, onClick, tooltip }: { title: string, icon: React.ComponentType<{ className?: string }>, href?: string, onClick?: React.MouseEventHandler, tooltip?: string }) => (
+  const SidebarButton = ({ title, icon: Icon, onClick, tooltip }: { title: string, icon: React.ComponentType<{ className?: string }>, href: string, onClick?: React.MouseEventHandler, tooltip?: string }) => (
     <Button
       title={tooltip}
       className={`${buttonBaseClass} ${

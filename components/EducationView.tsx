@@ -3,13 +3,12 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import Education from './EducationComponent'
-import { fetchSimpleIcons } from 'react-icon-cloud'
 
-interface Tab {
-  id: number
-  title: string
-  content: React.ReactNode
-}
+// interface Tab {
+//   id: number
+//   title: string
+//   content: React.ReactNode
+// }
 
 
 
@@ -64,7 +63,7 @@ const HHS_educationSkills = "   <h2>🎓Achievements</h2>\
   <p>👥 President of Investments Club, President of Data Science Club, Academic Center Tutor, COVID-19 Taskforce Member</p>\
   <p>🏅 Graduated with California State Seal of Biliteracy and Golden State Merit Diploma</p>";
 
-const [tabs, setTabs] = useState<Tab[]>([
+const tabs = ([
     { id: 1, title: 'Texas A&M University', content:<Education university={'Texas A&M University'} degree={'Bachelors of Science in Computer Science and Minor in Statistics'} duration={'December 2024'} skills={tamuSkills} icon={'https://upload.wikimedia.org/wikipedia/commons/e/ee/Texas_A%26M_University_logo.svg'} description={TAMU_educationSkills}/>},
     { id: 2, title: 'Foothill College', content:<Education university={'Foothill College'} degree={'Certificate of Achievement: Advanced Software Engineering and Software Development in Python'} duration={'June 2022'} skills={foothillSkills} icon={'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Foothill_College_logo.svg/2560px-Foothill_College_logo.svg.png'} description={Foothill_educationSkills}/>},
     { id: 3, title: 'Homestead High School', content:<Education university={'Homestead High School'} degree={'High School Diploma'} duration={'June 2022'} skills={hhsSkills} icon={'https://s3-us-west-2.amazonaws.com/sportshub2-uploads-prod/files/sites/922/2017/07/07163913/5410.png'} description={HHS_educationSkills}/>},

@@ -1,7 +1,6 @@
 import React from "react";
-import { Button } from "@/components/ui/button"
 import { Avatar } from "@/components/ui/avatar";
-import { AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
+import { AvatarImage } from "@radix-ui/react-avatar";
 
 const PersonCard = ({ showDetails = true }) => {
     return (

@@ -1,4 +1,5 @@
 import React from "react"
+import Image from 'next/image'
 
 export type SkillProps = {
     icon: string | React.ReactElement
@@ -9,7 +10,7 @@ export function Skill({ icon, name}: SkillProps) {
   const iconElement = React.isValidElement(icon) ? (
     React.cloneElement(icon as React.ReactElement, { className: "w-4 h-4" })
   ) : typeof icon === "string" && icon.startsWith("http") ? (
-    <img src={icon} alt={name} className="w-4 h-4" />
+    <Image src={icon} alt={name} className="w-4 h-4" width={16} height={16} />
   ) : (
     <span
       className="w-4 h-4"

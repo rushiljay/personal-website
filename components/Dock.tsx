@@ -6,7 +6,7 @@ Linkedin,
 Mail
 
 } from "lucide-react";
-import Image from "next/image";
+
 
 export function Dock() {
   const links = [

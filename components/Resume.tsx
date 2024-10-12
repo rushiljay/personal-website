@@ -5,7 +5,7 @@ import Experiences from "./Experiences"
 const experiences = [
     {
         name: "Deutsche Bank",
-        logo: "DeutscheBank.png",
+        logo: "/DeutscheBank.png",
         location: "Cary, NC",
         positions: [
             {
@@ -42,7 +42,7 @@ const experiences = [
     },
     {
         name: "Derivative Path",
-        logo: "DerivativePath.png",
+        logo: "/DerivativePath.png",
         location: "Remote",
         positions: [
             {
@@ -96,7 +96,7 @@ const experiences = [
     },
     {
         name: "Mathnasium",
-        logo: "./MathnasiumA+.webp",
+        logo: "/MathnasiumA+.webp",
         location: "Remote",
         positions: [
             {
@@ -116,7 +116,7 @@ const experiences = [
     },
     {
         name: "City of Cupertino",
-        logo: "./Seal_of_Cupertino,_California.svg.png",
+        logo: "/Seal_of_Cupertino,_California.svg.png",
         location: "Cupertino, CA",
         positions: [
             {

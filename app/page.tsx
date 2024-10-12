@@ -4,7 +4,6 @@ import { Hero } from "@/components/Hero";
 import { ModeToggle } from "@/components/ModeToggle";
 import Projects from "@/components/Projects";
 import Resume from "@/components/Resume";
-import { Skill } from "@/components/Skill";
 import { SkillsCloud } from "@/components/SkillsCloud";
 
 export default function Home() {

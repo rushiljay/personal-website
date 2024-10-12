@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Sidebar from "@/components/Sidebar";
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";

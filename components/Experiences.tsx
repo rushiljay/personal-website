@@ -1,6 +1,7 @@
-import { CalendarIcon, MapPinIcon, LucideIcon } from "lucide-react"
+import { CalendarIcon, MapPinIcon } from "lucide-react"
 import React from "react"
 import { Skill } from "./Skill"
+import Image from 'next/image'
 import type { SkillProps } from "./Skill"
 
 type Position = {
@@ -41,7 +42,7 @@ const PositionEntry = ({ position }: { position: Position }) => (
 const CompanyEntry = ({ company }: { company: Company }) => (
   <div className="mb-6 last:mb-0">
     <div className="flex items-start">
-      <img src={company.logo} alt={`${company.name} logo`} className="w-12 h-12 mr-4" />
+      <Image src={company.logo} alt={`${company.name} logo`} className="w-12 h-12 mr-4" width={48} height={48} />
       <div>
         <h3 className="text-xl font-bold">{company.name}</h3>
         <p className="text-sm text-muted-foreground flex items-center">
