@@ -39,6 +39,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <title>Rushil Jayant</title>
+      </head>
       <body
         className={`${inter.className} flex items-start justify-between h-screen w-screen dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative`}
       >
@@ -60,3 +63,4 @@ export default function RootLayout({
     </html>
   );
 }
+
