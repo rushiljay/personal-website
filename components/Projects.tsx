@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Github, Globe } from 'lucide-react'
 import Image from 'next/image'
 import { Skill } from './Skill'
+import { ScrollArea } from './ui/scroll-area'
 
 type Project = {
   id: number
@@ -155,7 +156,9 @@ function ProjectModal({ project, onClose }: { project: Project | null, onClose: 
               />
             </div>
           )}
-          <p className="text-muted-foreground mb-4">{project.longDescription}</p>
+          <ScrollArea className="max-h-[192px] overflow-y-auto mb-4">
+            <p className="text-muted-foreground">{project.longDescription}</p>
+          </ScrollArea>
           <div className="flex flex-wrap gap-2 mb-4">
             {project.skills.map((skill, index) => (
                         <Skill key={index} icon={skill.icon} name={skill.name} />
